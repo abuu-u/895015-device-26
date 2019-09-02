@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [abuu](https://up.htmlacademy.ru/htmlcss/26/user/895015).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Ефимов](https://htmlacademy.ru/profile/efiand).
 
 ---
 
