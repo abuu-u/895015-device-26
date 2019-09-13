@@ -11,7 +11,10 @@
           <img src="img/logo-device.svg" alt="Логотип Девайс" width="163" height="35">
         </a>
 
-        <p><span>Поиск по сайту</span></p>
+        <form action="" method="POST">
+            <input type="search" name="search" placeholder="Поиск по сайту">
+            <button type="submit">Найти</button>
+        </form>
 
         <ul>
           <li><a href="#nowhere">Валентин петухов</a></li>
@@ -52,13 +55,72 @@
       </ul>
 
         <h2>Фильтр:</h2>
+        <form action="" method="POST">
+          <p>
+            <p>Стоимость</p>
+            от 0 <input type="range" name="slider" min="0" max="5000" value="5000" step="100"> до 5000
+          </p>
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="black" checked>
+                  Черный
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="white">
+                  Белый
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="blue" checked>
+                  Синий
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="red" checked>
+                  Красный
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="pink">
+                  Розовый
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" name="bluetooth" checked>
+                  Есть
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="bluetooth">
+                  Нет
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
         <h2>Сортировка:</h2>
         <ul>
-          <li><a href="#nowhere">По цене</a></li>
-          <li><a href="#nowhere">По типу</a></li>
-          <li><a href="#nowhere">По популярности</a></li>
-          <li><a href="#nowhere">Вверх</a></li>
-          <li><a href="#nowhere">Вниз</a></li>
+          <li><button type="button">По цене</button></li>
+          <li><button type="button">По типу</button></li>
+          <li><button type="button">По популярности</button></li>
+          <li><button type="button" class="visually-hidden">Вверх</button></li>
+          <li><button type="button" class="visually-hidden">Вниз</button></li>
         </ul>
         <h2>Список моноподов для селфи</h2>
         <ul>
@@ -74,6 +136,8 @@
           <p>
             500 руб.
           </p>
+          <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
         </li>
         <li>
           <h3>
@@ -87,6 +151,8 @@
           <p>
             1 500 руб.
           </p>
+          <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
         </li>
         <li>
           <h3>
@@ -100,6 +166,8 @@
           <p>
             2 500 руб.
           </p>
+          <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
         </li>
         <li>
           <h3>
@@ -113,6 +181,8 @@
           <p>
             4 900 руб.
           </p>
+          <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
         </li>
       </ul>
 
@@ -147,9 +217,9 @@
       <p><a href="tel:+74954959595">Тел: +7(495)495-95-95</a></p>
 
       <ul>
-        <li><a href="#nowhere">Вконтакте</a></li>
-        <li><a href="#nowhere">Фейсбук</a></li>
-        <li><a href="#nowhere">Инстаграм</a></li>
+        <li><a href="#nowhere"  class="visually-hidden">Вконтакте</a></li>
+        <li><a href="#nowhere"  class="visually-hidden">Фейсбук</a></li>
+        <li><a href="#nowhere"  class="visually-hidden">Инстаграм</a></li>
       </ul>
 
       <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип htmlacademy"  width="27" height="35"></a>
