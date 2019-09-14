@@ -11,7 +11,7 @@
           <img src="img/logo-device.svg" alt="Логотип Девайс" width="163" height="35">
         </a>
 
-        <form action="" method="POST">
+        <form action="https://echo.htmlacademy.ru" method="GET">
             <input type="search" name="search" placeholder="Поиск по сайту">
             <button type="submit">Найти</button>
         </form>
@@ -54,76 +54,84 @@
         <li>Моноподы для селфи</li>
       </ul>
 
-        <h2>Фильтр:</h2>
-        <form action="" method="POST">
-          <p>
-            <p>Стоимость</p>
-            от 0 <input type="range" name="slider" min="0" max="5000" value="5000" step="100"> до 5000
-          </p>
-          <fieldset>
-            <legend>Цвет</legend>
-            <ul>
-              <li>
-                <label>
-                  <input type="checkbox" name="black" checked>
-                  Черный
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="white">
-                  Белый
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="blue" checked>
-                  Синий
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="red" checked>
-                  Красный
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="pink">
-                  Розовый
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Bluetooth</legend>
-            <ul>
-              <li>
-                <label>
-                  <input type="radio" name="bluetooth" checked>
-                  Есть
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="radio" name="bluetooth">
-                  Нет
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <button type="submit">Показать</button>
-        </form>
+      <h2>Фильтр:</h2>
+      <form action="https://echo.htmlacademy.ru" method="GET">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <!--Кастомный ползунок-->
+          <label for="price-min">От
+            <input type="text" name="price" id="price-min" value="0">
+          </label>
+          <label for="price-max">До
+            <input type="text" name="price" id="price-max" value="5000">
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="color" value="black" checked>
+                Черный
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="color" value="white">
+                Белый
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="color" value="blue" checked>
+                Синий
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="color" value="red" checked>
+                Красный
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="color" value="pink">
+                Розовый
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="bluetooth" value="1" checked>
+                Есть
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="bluetooth" value="0">
+                Нет
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+      <form action="https://echo.htmlacademy.ru" method="GET">
         <h2>Сортировка:</h2>
         <ul>
-          <li><button type="button">По цене</button></li>
-          <li><button type="button">По типу</button></li>
-          <li><button type="button">По популярности</button></li>
-          <li><button type="button" class="visually-hidden">Вверх</button></li>
-          <li><button type="button" class="visually-hidden">Вниз</button></li>
+          <li><button type="submit" name="sort" value="price">По цене</button></li>
+          <li><button type="submit" name="sort" value="type">По типу</button></li>
+          <li><button type="submit" name="sort" value="popular">По популярности</button></li>
+          <li><button type="submit" name="sort-by" value="ascending"><span class="visually-hidden">По возрастанию</span></button></li>
+          <li><button type="submit" name="sort-by" value="descending"><span class="visually-hidden">По убыванию</span></button></li>
         </ul>
-        <h2>Список моноподов для селфи</h2>
-        <ul>
+      </form>
+      <h2>Список моноподов для селфи</h2>
+      <ul>
         <li>
           <h3>
             <a href="#nowhere">
@@ -136,8 +144,8 @@
           <p>
             500 руб.
           </p>
-          <button type="button">В корзину</button>
-          <button type="button">Добавить к сравнению</button>
+          <a href="#nowhere">В корзину</a>
+          <a href="#nowhere">Добавить к сравнению</a>
         </li>
         <li>
           <h3>
@@ -151,8 +159,8 @@
           <p>
             1 500 руб.
           </p>
-          <button type="button">В корзину</button>
-          <button type="button">Добавить к сравнению</button>
+          <a href="#nowhere">В корзину</a>
+          <a href="#nowhere">Добавить к сравнению</a>
         </li>
         <li>
           <h3>
@@ -166,8 +174,8 @@
           <p>
             2 500 руб.
           </p>
-          <button type="button">В корзину</button>
-          <button type="button">Добавить к сравнению</button>
+          <a href="#nowhere">В корзину</a>
+          <a href="#nowhere">Добавить к сравнению</a>
         </li>
         <li>
           <h3>
@@ -181,8 +189,8 @@
           <p>
             4 900 руб.
           </p>
-          <button type="button">В корзину</button>
-          <button type="button">Добавить к сравнению</button>
+          <a href="#nowhere">В корзину</a>
+          <a href="#nowhere">Добавить к сравнению</a>
         </li>
       </ul>
 
@@ -217,9 +225,9 @@
       <p><a href="tel:+74954959595">Тел: +7(495)495-95-95</a></p>
 
       <ul>
-        <li><a href="#nowhere"  class="visually-hidden">Вконтакте</a></li>
-        <li><a href="#nowhere"  class="visually-hidden">Фейсбук</a></li>
-        <li><a href="#nowhere"  class="visually-hidden">Инстаграм</a></li>
+        <li><a href="#nowhere"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li><a href="#nowhere"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li><a href="#nowhere"><span class="visually-hidden">Инстаграм</span></a></li>
       </ul>
 
       <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип htmlacademy"  width="27" height="35"></a>
