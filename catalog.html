@@ -59,12 +59,10 @@
         <fieldset>
           <legend>Стоимость</legend>
           <!--Кастомный ползунок-->
-          <label for="price-min">От
-            <input type="text" name="price" id="price-min" value="0">
-          </label>
-          <label for="price-max">До
-            <input type="text" name="price" id="price-max" value="5000">
-          </label>
+          <label for="price-min">От</label>
+          <input type="text" name="price-min" id="price-min" value="0">
+          <label for="price-max">До</label>
+          <input type="text" name="price-max" id="price-max" value="5000">
         </fieldset>
         <fieldset>
           <legend>Цвет</legend>
@@ -130,7 +128,7 @@
           <li><button type="submit" name="sort-by" value="descending"><span class="visually-hidden">По убыванию</span></button></li>
         </ul>
       </form>
-      <h2>Список моноподов для селфи</h2>
+      <h2 class="visually-hidden">Список моноподов для селфи</h2>
       <ul>
         <li>
           <h3>
