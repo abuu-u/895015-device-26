@@ -168,11 +168,6 @@ a {
   opacity: 1;
 }
 
-.search-text:focus + .search-btn,
-.search-btn:focus {
-  display: inline;
-}
-
 .search-btn:hover,
 .search-btn:focus {
   color: #ffffff;
