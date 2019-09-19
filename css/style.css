@@ -271,6 +271,8 @@ a {
 
 .services {
   list-style: none;
+
+  background-color: #e5e5e5;
 }
 
 .services .text {
