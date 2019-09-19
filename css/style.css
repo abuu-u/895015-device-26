@@ -193,21 +193,118 @@ a {
   opacity: 0.3;
 }
 
-.index-columns h2 {
-  font-weight: 800;
-  font-size: 47;
-  line-height: 48px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  color: #000000;
-  letter-spacing: 0.47px;
-}
-
-.index-columns .text {
+.text {
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
   font-family: "OpenSans", "Arial", sans-serif;
   color: #464646;
+}
+
+.slides .text {
+  letter-spacing: 0.15px;
+}
+
+.slides .button {
+  width: 220px;
+}
+
+.slides b {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 56px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #000000;
+  letter-spacing: 0.47px;
+}
+
+.features dd {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #000000;
+  letter-spacing: 0.36px;
+}
+
+.features dt {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  color: #464646;
+  letter-spacing: 0.13px;
+}
+
+.section-list {
+  list-style: none;
+}
+
+.section-item a:active {
+  opacity: 0.3;
+}
+
+.section-list a {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #000000;
+  letter-spacing: 0.18px;
+}
+
+.service-slides {
+  list-style: none;
+}
+
+.service-slides .button {
+  width: 160px;
+}
+
+.service-slides .button:active {
+  padding-right: 118px;
+
+  color: #f7e184;
+
+  background-color: #000000;
+}
+
+.services {
+  list-style: none;
+}
+
+.services .text {
+  letter-spacing: 0.15px;
+}
+
+.partners {
+  list-style: none;
+}
+
+.partner:nth-of-type(1) img:active {
+  content: url("../img/partner-1-colored.png");
+}
+
+.partner:nth-of-type(2) img:active {
+  content: url("../img/partner-2-colored.png");
+}
+
+.partner:nth-of-type(3) img:active {
+  content: url("../img/partner-3-colored.png");
+}
+
+.partner:nth-of-type(4) img:active {
+  content: url("../img/partner-4-colored.png");
+}
+
+.index-columns h2,
+.services h3 {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #000000;
+  letter-spacing: 0.47px;
 }
 
 .delivery-list li {
