@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize-mini.css" rel="stylesheet">
-    <link href="css/style-mini.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -15,34 +15,34 @@
         </a>
 
         <form class="search" action="https://echo.htmlacademy.ru" method="GET">
-          <input class="search-text" type="search" name="search" placeholder="Поиск по сайту">
+          <input class="search-text navigation" type="search" name="search" placeholder="Поиск по сайту">
           <button class="search-btn" type="submit">Найти</button>
         </form>
 
         <ul class="user-navigation">
-          <li><a href="#nowhere">Войти</a></li>
-          <li><a href="#nowhere">Сравнить</a></li>
-          <li><a href="#nowhere">Корзина</a></li>
+          <li><a class="navigation" href="#nowhere">Войти</a></li>
+          <li><a class="navigation" href="#nowhere">Сравнить</a></li>
+          <li><a class="navigation" href="#nowhere">Корзина</a></li>
         </ul>
 
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог товаров</a>
-            <ul class="site-navigation popup">
-              <li><a href="#nowhere">Виртуальная реальность</a></li>
-              <li><a href="#nowhere">Моноподы для селфи</a></li>
-              <li><a href="#nowhere">Экшн-камеры</a></li>
+          <li><a class="navigation site-nav" href="catalog.html">Каталог товаров</a>
+            <ul class="nav-popup">
+              <li><a class="navigation" href="#nowhere">Виртуальная реальность</a></li>
+              <li><a class="navigation" href="#nowhere">Моноподы для селфи</a></li>
+              <li><a class="navigation" href="#nowhere">Экшн-камеры</a></li>
             </ul>
-            <ul class="site-navigation popup">
-              <li><a href="#nowhere">Фитнес-браслеты</a></li>
-              <li><a href="#nowhere">Умные часы</a></li>
+            <ul class="nav-popup">
+              <li><a class="navigation" href="#nowhere">Фитнес-браслеты</a></li>
+              <li><a class="navigation" href="#nowhere">Умные часы</a></li>
             </ul>
-            <ul class="site-navigation popup">
-              <li><a href="#nowhere">Квадрокоптеры</a></li>
+            <ul class="nav-popup">
+              <li><a class="navigation" href="#nowhere">Квадрокоптеры</a></li>
             </ul>
           </li>
-          <li><a href="#nowhere">Доставка</a></li>
-          <li><a href="#nowhere">Гарантия</a></li>
-          <li><a href="#nowhere">Контакты</a></li>
+          <li><a class="navigation site-nav" href="#nowhere">Доставка</a></li>
+          <li><a class="navigation site-nav" href="#nowhere">Гарантия</a></li>
+          <li><a class="navigation site-nav" href="#nowhere">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -60,7 +60,7 @@
                 <img src="img/suggestion-1.png" alt="Предложение 1" width="384" height="486">
               </a>
             </p>
-            <b>Делай селфи, как Бен Стиллер!</b>
+            <b class="heading-text">Делай селфи, как Бен Стиллер!</b>
             <p class="text">
               Самая длинная палка для селфи доступна в нашем магазине
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
@@ -69,7 +69,7 @@
               <a class="button" href="#nowhere">Подробнее</a>
             </p>
             <h4 class="visually-hidden">Список характеристик:</h4>
-            <dl class="features">
+            <dl class="product-features">
               <dt>Длина палки</dt>
               <dd>8,5 м</dd>
 
@@ -88,7 +88,7 @@
                 <img src="img/suggestion-2.png" alt="Предложение 2" width="345" height="485">
               </a>
             </p>
-            <b>Худеем правильно!</b>
+            <b class="heading-text">Худеем правильно!</b>
             <p class="text">
               Мотивирующие фитнес-браслеты помогут найти в себе силы
               не пропускать занятия и соблюдать диету.
@@ -99,7 +99,7 @@
             </p>
 
             <h4 class="visually-hidden">Список характеристик:</h4>
-            <dl class="features">
+            <dl class="product-features">
               <dt>Без подзарядки</dt>
               <dd>48 часов</dd>
             </dl>
@@ -112,7 +112,7 @@
                 <img src="img/suggestion-3.png" alt="Предложение 3" width="526" height="334">
               </a>
             </p>
-            <b>Порхает как бабочка, жалит как пчела!</b>
+            <b class="heading-text">Порхает как бабочка, жалит как пчела!</b>
             <p class="text">
               Этот обычный, на первый взгляд, квадрокоптер оснащен
               мощным лазером, замаскированным под стандартную камеру.
@@ -121,7 +121,7 @@
             <p><a class="button" href="#nowhere">Подробнее</a></p>
 
             <h4 class="visually-hidden">Список характеристик:</h4>
-            <dl class="features">
+            <dl class="product-features">
               <dt>Дальность полета</dt>
               <dd>800 м</dd>
               <dt>Радиус поражения</dt>
@@ -133,7 +133,7 @@
 
       <section>
         <h2 class="visually-hidden">Список разделов</h2>
-        <ul class="section-list">
+        <ul class="section-list bold-text">
           <li class="section-item"><a href="#nowhere">Виртуальная реальность</a></li>
           <li class="section-item"><a href="#nowhere">Моноподы для селфи</a></li>
           <li class="section-item"><a href="#nowhere">Экшн-камеры</a></li>
@@ -152,7 +152,7 @@
         </ul>
         <ul class="services">
           <li>
-            <h3>Доставка</h3>
+            <h3 class="heading-text">Доставка</h3>
             <p class="text">
               Мы с удовольствием доставим ваш товар прямо к вашему
               подъезду совершенно бесплатно! Ведь мы неплохо
@@ -160,7 +160,7 @@
             </p>
           </li>
           <li>
-            <h3>Гарантия</h3>
+            <h3 class="heading-text">Гарантия</h3>
             <p class="text">
               Если из-за возгорания купленного у нас товара у вас сгорит
               дом — не переживайте, мы выдадим вам новый.<br>
@@ -168,7 +168,7 @@
             </p>
           </li>
           <li>
-            <h3>Кредит</h3>
+            <h3 class="heading-text">Кредит</h3>
             <p class="text">
               Залезть в долговую яму стало проще! Кредитные
               консультанты подберут для вас наиболее выгодные
@@ -181,15 +181,15 @@
       <section>
         <h2 class="visually-hidden">Список партнеров</h2>
         <ul class="partners">
-          <li class="partner"><a href="#nowhere"><img src="img/partner-1.png" alt="Dji" width="260" height="100"></a></li>
-          <li class="partner"><a href="#nowhere"><img src="img/partner-2.png" alt="Spgadgets" width="260" height="100"></a></li>
-          <li class="partner"><a href="#nowhere"><img src="img/partner-3.png" alt="Gopro" width="260" height="100"></a></li>
-          <li class="partner"><a href="#nowhere"><img src="img/partner-4.png" alt="Vive" width="260" height="100"></a></li>
+          <li><a class="partner-1" href="#nowhere"><img src="img/partner-1.png" alt="Dji" width="260" height="100"></a></li>
+          <li><a class="partner-2" href="#nowhere"><img src="img/partner-2.png" alt="Spgadgets" width="260" height="100"></a></li>
+          <li><a class="partner-3" href="#nowhere"><img src="img/partner-3.png" alt="Gopro" width="260" height="100"></a></li>
+          <li><a class="partner-4" href="#nowhere"><img src="img/partner-4.png" alt="Vive" width="260" height="100"></a></li>
         </ul>
       </section>
       <div class="index-columns">
         <section class="about-us">
-          <h2>О нас</h2>
+          <h2 class="heading-text">О нас</h2>
 
           <p class="text">
             Огромный выбор гаджетов не оставит равнодушым гика,
@@ -201,7 +201,7 @@
             России! DEVICE работает со многими транспортными компаниями:
           </p>
 
-          <ul class="delivery-list">
+          <ul class="delivery-list bold-text">
             <li><p>Деловые линии</p></li>
             <li><p>Автотрейдинг</p></li>
             <li><p>ЖелДорЭкспедиция</p></li>
@@ -211,7 +211,7 @@
         </section>
 
         <section class="contacts">
-          <h2>Контакты</h2>
+          <h2 class="heading-text">Контакты</h2>
 
           <p class="text">
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
@@ -227,56 +227,58 @@
             <p>
               <img src="img/map-big.jpg" alt="Офис компании по адресу ул. Строителей, 15" width="960" height="559">
             </p>
-            <button type="button" name="close-map"><span class="visually-hidden">Закрыть</span></button>
+            <button class="close-button" type="button" name="close-map"><span class="visually-hidden">Закрыть</span></button>
           </div>
           <p><a class="button" href="#nowhere">Напишите нам</a></p>
           <form class="write-us" action="https://echo.htmlacademy.ru" method="POST">
             <p>
-              <label for="name">Ваше имя:</label>
-              <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+              <label class="bold-text" for="name">Ваше имя:</label>
+              <input class="text" type="text" name="name" id="name" pattern="^[А-Яа-яЁё\s]+$" placeholder="Имя Фамилия">
             </p>
             <p>
-              <label for="email">Ваш e-mail:</label>
-              <input type="text" name="email" id="email" placeholder="email@example.com">
+              <label class="bold-text" for="email">Ваш e-mail:</label>
+              <input class="text" type="text" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="email@example.com">
             </p>
             <p>
-              <label for="letter-text">Тект письма:</label>
-              <textarea name="letter-text" id="letter-text" cols="70" rows="10" placeholder="В свободной форме"></textarea>
+              <label class="bold-text" for="letter-text">Тект письма:</label>
+              <textarea class="text" name="letter-text" id="letter-text" cols="70" rows="10" placeholder="В свободной форме"></textarea>
             </p>
-            <button type="submit">Отправить</button>
-            <button type="button"><span class="visually-hidden">Закрыть</span></button>
+            <button class="button" type="submit">Отправить</button>
+            <button class="close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
           </form>
         </section>
       </div>
     </main>
     <footer class="footer">
       <a>
-        <img class="logo-device" src="img/logo-device.svg" alt="Логотип Девайс" width="163" height="35">
+        <img src="img/logo-device.svg" alt="Логотип Девайс" width="163" height="35">
       </a>
 
       <ul class="user-navigation-footer">
-        <li><a href="#nowhere">Войти</a></li>
-        <li><a href="#nowhere">Сравнить</a></li>
-        <li><a href="#nowhere">Корзина</a></li>
+        <li><a class="footer-navigation" href="#nowhere">Войти</a></li>
+        <li><a class="footer-navigation" href="#nowhere">Сравнить</a></li>
+        <li><a class="footer-navigation" href="#nowhere">Корзина</a></li>
       </ul>
 
       <p class="addres">г. Москва, ул. Строителей, 15</p>
 
       <ul class="site-navigation">
-        <li><a href="#nowhere">Доставка</a></li>
-        <li><a href="#nowhere">Гарантия</a></li>
-        <li><a href="#nowhere">Контакты</a></li>
+        <li><a class="navigation site-nav" href="#nowhere">Доставка</a></li>
+        <li><a class="navigation site-nav" href="#nowhere">Гарантия</a></li>
+        <li><a class="navigation site-nav" href="#nowhere">Контакты</a></li>
       </ul>
 
       <p><a class="tel" href="tel:+74954959595">Тел: +7(495)495-95-95</a></p>
 
       <ul class="socials">
-        <li><a href="#nowhere"><span class="visually-hidden">Вконтакте</span></a></li>
-        <li><a href="#nowhere"><span class="visually-hidden">Фейсбук</span></a></li>
-        <li><a href="#nowhere"><span class="visually-hidden">Инстаграм</span></a></li>
+        <li><a class="link-opacity" href="#nowhere"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li><a class="link-opacity" href="#nowhere"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li><a class="link-opacity" href="#nowhere"><span class="visually-hidden">Инстаграм</span></a></li>
       </ul>
 
-      <a class="logo-html" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип htmlacademy" width="27" height="35"></a>
+      <a class="logo-html navigation" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-html.svg" alt="Логотип htmlacademy" width="27" height="35">
+      </a>
     </footer>
   </body>
 </html>
