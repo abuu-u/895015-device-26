@@ -29,8 +29,8 @@ body {
 }
 
 img {
-  height: auto;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -47,8 +47,9 @@ a {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
-  border: none;
+
   background: none;
+  border: none;
 }
 
 .button:active {
@@ -81,8 +82,8 @@ a {
 
 .nav-popup {
   display: none;
-  list-style: none;
 
+  list-style: none;
   line-height: 36px;
   letter-spacing: 0.15px;
 }
@@ -110,6 +111,7 @@ a {
 
 .search-btn {
   display: none;
+
   font: inherit;
 
   background: none;
@@ -124,12 +126,14 @@ a {
 .search-btn:hover,
 .search-btn:focus {
   color: #ffffff;
-  border-color: #000000;
+
   background-color: #000000;
+  border-color: #000000;
 }
 
 .search-btn:active {
   color: rgba(255, 255, 255, 0.3);
+
   background-color: #000000;
 }
 
@@ -156,13 +160,13 @@ a {
 }
 
 .bold-text {
+  list-style: none;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.18px;
-  list-style: none;
 }
 
 .section-item a:active {
@@ -224,14 +228,14 @@ a {
 }
 
 .delivery-list p {
-  letter-spacing: normal;
   line-height: 40px;
   color: #000000;
+  letter-spacing: normal;
 }
 
 .close-button {
-  border: none;
   background: none;
+  border: none;
   opacity: 0.5;
 }
 
@@ -260,9 +264,10 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+
+  background-color: #f2f2f2;
   border: none;
   opacity: 0.4;
-  background-color: #f2f2f2;
 }
 
 .write-us .text:hover {
@@ -270,9 +275,9 @@ a {
 }
 
 .write-us .text:focus {
-  opacity: 1;
   background-color: #ffffff;
   border: 3px solid #f0c52e;
+  opacity: 1;
 }
 
 .write-us .text:invalid {
@@ -319,8 +324,8 @@ a {
   list-style: none;
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.14px;
   color: #000000;
+  letter-spacing: 0.14px;
 }
 
 .breadcrumbs + h2 {
@@ -354,15 +359,15 @@ a {
 
 .price-filter input,
 .price-filter label {
-  background: none;
-  border: none;
+  font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
-  font-weight: 300;
   letter-spacing: normal;
 
+  background: none;
+  border: none;
   opacity: 0.2;
 }
 
@@ -380,8 +385,8 @@ a {
 }
 
 h2.bold-text {
-  text-transform: uppercase;
   font-size: 16px;
+  text-transform: uppercase;
   letter-spacing: 3.2px;
 }
 
@@ -404,9 +409,9 @@ h2.bold-text {
 }
 
 .product-price {
+  font-size: 16px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
-  font-size: 16px;
   letter-spacing: 0.16px;
 }
 
@@ -435,8 +440,8 @@ h2.bold-text {
 }
 
 .pagination-list {
-  text-transform: uppercase;
   font-size: 16px;
+  text-transform: uppercase;
   letter-spacing: 3.2px;
 
   background-color: #ebebeb;
