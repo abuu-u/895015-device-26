@@ -10,39 +10,39 @@
   <body>
     <header>
       <nav class="main-navigation">
-        <a>
-          <img class="logo-device" src="img/logo-device.svg" alt="Логотип Девайс" width="163" height="35">
+        <a class="logo-device">
+          <img src="img/logo-device.svg" alt="Логотип Девайс" width="163" height="35">
         </a>
 
         <form class="search" action="https://echo.htmlacademy.ru" method="GET">
-          <input class="search-text navigation" type="search" name="search" placeholder="Поиск по сайту">
+          <input class="search-text nav-elem" type="search" name="search" placeholder="Поиск по сайту">
           <button class="search-btn" type="submit">Найти</button>
         </form>
 
-        <ul class="user-navigation">
-          <li><a class="navigation" href="#nowhere">Войти</a></li>
-          <li><a class="navigation" href="#nowhere">Сравнить</a></li>
-          <li><a class="navigation" href="#nowhere">Корзина</a></li>
+        <ul class="user-navigation bullet-remove">
+          <li><a class="nav-elem" href="#nowhere">Войти</a></li>
+          <li><a class="nav-elem" href="#nowhere">Сравнить</a></li>
+          <li><a class="nav-elem" href="#nowhere">Корзина</a></li>
         </ul>
 
-        <ul class="site-navigation">
-          <li><a class="navigation site-nav" href="catalog.html">Каталог товаров</a>
-            <ul class="nav-popup">
-              <li><a class="navigation" href="#nowhere">Виртуальная реальность</a></li>
-              <li><a class="navigation" href="#nowhere">Моноподы для селфи</a></li>
-              <li><a class="navigation" href="#nowhere">Экшн-камеры</a></li>
+        <ul class="site-navigation bullet-remove">
+          <li><a class="nav-elem site-nav" href="catalog.html">Каталог товаров</a>
+            <ul class="nav-popup bullet-remove">
+              <li><a class="nav-elem" href="#nowhere">Виртуальная реальность</a></li>
+              <li><a class="nav-elem" href="#nowhere">Моноподы для селфи</a></li>
+              <li><a class="nav-elem" href="#nowhere">Экшн-камеры</a></li>
             </ul>
-            <ul class="nav-popup">
-              <li><a class="navigation" href="#nowhere">Фитнес-браслеты</a></li>
-              <li><a class="navigation" href="#nowhere">Умные часы</a></li>
+            <ul class="nav-popup bullet-remove">
+              <li><a class="nav-elem" href="#nowhere">Фитнес-браслеты</a></li>
+              <li><a class="nav-elem" href="#nowhere">Умные часы</a></li>
             </ul>
-            <ul class="nav-popup">
-              <li><a class="navigation" href="#nowhere">Квадрокоптеры</a></li>
+            <ul class="nav-popup bullet-remove">
+              <li><a class="nav-elem" href="#nowhere">Квадрокоптеры</a></li>
             </ul>
           </li>
-          <li><a class="navigation site-nav" href="#nowhere">Доставка</a></li>
-          <li><a class="navigation site-nav" href="#nowhere">Гарантия</a></li>
-          <li><a class="navigation site-nav" href="#nowhere">Контакты</a></li>
+          <li><a class="nav-elem site-nav" href="#nowhere">Доставка</a></li>
+          <li><a class="nav-elem site-nav" href="#nowhere">Гарантия</a></li>
+          <li><a class="nav-elem site-nav" href="#nowhere">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -52,7 +52,7 @@
 
       <section>
         <h2 class="visually-hidden">Промо-предложения</h2>
-        <ul class="slides">
+        <ul class="slides bullet-remove">
           <li>
             <h3 class="visually-hidden">Самая длинная палка</h3>
             <p>
@@ -133,7 +133,7 @@
 
       <section>
         <h2 class="visually-hidden">Список разделов</h2>
-        <ul class="section-list bold-text">
+        <ul class="section-list text-font bullet-remove">
           <li class="section-item"><a href="#nowhere">Виртуальная реальность</a></li>
           <li class="section-item"><a href="#nowhere">Моноподы для селфи</a></li>
           <li class="section-item"><a href="#nowhere">Экшн-камеры</a></li>
@@ -145,12 +145,12 @@
 
       <section>
         <h2 class="visually-hidden">Список сервисов</h2>
-        <ul class="service-slides">
+        <ul class="service-slides bullet-remove">
           <li><a class="button" href="#nowhere">Доставка</a></li>
           <li><a class="button" href="#nowhere">Гарантия</a></li>
           <li><a class="button" href="#nowhere">Кредит</a></li>
         </ul>
-        <ul class="services">
+        <ul class="services bullet-remove">
           <li>
             <h3 class="heading-text">Доставка</h3>
             <p class="text">
@@ -180,7 +180,7 @@
 
       <section>
         <h2 class="visually-hidden">Список партнеров</h2>
-        <ul class="partners">
+        <ul class="partners bullet-remove">
           <li><a class="partner-1" href="#nowhere"><img src="img/partner-1.png" alt="Dji" width="260" height="100"></a></li>
           <li><a class="partner-2" href="#nowhere"><img src="img/partner-2.png" alt="Spgadgets" width="260" height="100"></a></li>
           <li><a class="partner-3" href="#nowhere"><img src="img/partner-3.png" alt="Gopro" width="260" height="100"></a></li>
@@ -201,7 +201,7 @@
             России! DEVICE работает со многими транспортными компаниями:
           </p>
 
-          <ul class="delivery-list bold-text">
+          <ul class="delivery-list text-font">
             <li><p>Деловые линии</p></li>
             <li><p>Автотрейдинг</p></li>
             <li><p>ЖелДорЭкспедиция</p></li>
@@ -232,15 +232,15 @@
           <p><a class="button" href="#nowhere">Напишите нам</a></p>
           <form class="write-us" action="https://echo.htmlacademy.ru" method="POST">
             <p>
-              <label class="bold-text" for="name">Ваше имя:</label>
-              <input class="text" type="text" name="name" id="name" pattern="^[А-Яа-яЁё\s]+$" placeholder="Имя Фамилия">
+              <label class="text-font" for="name">Ваше имя:</label>
+              <input class="text" type="text" name="name" id="name" placeholder="Имя Фамилия">
             </p>
             <p>
-              <label class="bold-text" for="email">Ваш e-mail:</label>
+              <label class="text-font" for="email">Ваш e-mail:</label>
               <input class="text" type="text" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="email@example.com">
             </p>
             <p>
-              <label class="bold-text" for="letter-text">Тект письма:</label>
+              <label class="text-font" for="letter-text">Тект письма:</label>
               <textarea class="text" name="letter-text" id="letter-text" cols="70" rows="10" placeholder="В свободной форме"></textarea>
             </p>
             <button class="button" type="submit">Отправить</button>
@@ -250,11 +250,11 @@
       </div>
     </main>
     <footer class="footer">
-      <a>
+      <a class="logo-device">
         <img src="img/logo-device.svg" alt="Логотип Девайс" width="163" height="35">
       </a>
 
-      <ul class="user-navigation-footer">
+      <ul class="user-navigation-footer bullet-remove">
         <li><a class="footer-navigation" href="#nowhere">Войти</a></li>
         <li><a class="footer-navigation" href="#nowhere">Сравнить</a></li>
         <li><a class="footer-navigation" href="#nowhere">Корзина</a></li>
@@ -262,21 +262,21 @@
 
       <p class="addres">г. Москва, ул. Строителей, 15</p>
 
-      <ul class="site-navigation">
-        <li><a class="navigation site-nav" href="#nowhere">Доставка</a></li>
-        <li><a class="navigation site-nav" href="#nowhere">Гарантия</a></li>
-        <li><a class="navigation site-nav" href="#nowhere">Контакты</a></li>
+      <ul class="site-navigation bullet-remove">
+        <li><a class="nav-elem site-nav" href="#nowhere">Доставка</a></li>
+        <li><a class="nav-elem site-nav" href="#nowhere">Гарантия</a></li>
+        <li><a class="nav-elem site-nav" href="#nowhere">Контакты</a></li>
       </ul>
 
       <p><a class="tel" href="tel:+74954959595">Тел: +7(495)495-95-95</a></p>
 
-      <ul class="socials">
+      <ul class="socials bullet-remove">
         <li><a class="link-opacity" href="#nowhere"><span class="visually-hidden">Вконтакте</span></a></li>
         <li><a class="link-opacity" href="#nowhere"><span class="visually-hidden">Фейсбук</span></a></li>
         <li><a class="link-opacity" href="#nowhere"><span class="visually-hidden">Инстаграм</span></a></li>
       </ul>
 
-      <a class="logo-html navigation" href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="logo-html nav-elem" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo-html.svg" alt="Логотип htmlacademy" width="27" height="35">
       </a>
     </footer>

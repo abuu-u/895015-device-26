@@ -10,40 +10,40 @@
   <body class="catalog">
     <header>
       <nav class="main-navigation">
-        <a class="logo-device navigation" href="index.html">
+        <a class="logo-device nav-elem" href="index.html">
           <img src="img/logo-device.svg" alt="Логотип Девайс" width="163" height="35">
         </a>
 
         <form class="search" action="https://echo.htmlacademy.ru" method="GET">
-          <input class="search-text navigation" type="search" name="search" placeholder="Поиск по сайту">
+          <input class="search-text nav-elem" type="search" name="search" placeholder="Поиск по сайту">
           <button class="search-btn" type="submit">Найти</button>
         </form>
 
-        <ul class="user-navigation">
-          <li><a class="navigation" href="#nowhere">Валентин петухов</a></li>
+        <ul class="user-navigation bullet-remove">
+          <li><a class="nav-elem" href="#nowhere">Валентин Петухов</a></li>
           <li><a class="link-opacity" href="#nowhere">Выйти</a></li>
-          <li><a class="navigation" href="#nowhere">Сравнить</a></li>
-          <li><a class="navigation" href="#nowhere">Корзина</a></li>
+          <li><a class="nav-elem" href="#nowhere">Сравнить</a></li>
+          <li><a class="nav-elem" href="#nowhere">Корзина</a></li>
         </ul>
 
-        <ul class="site-navigation">
-          <li><a class="navigation site-nav" href="catalog.html">Каталог товаров</a>
-            <ul class="site-navigation nav-popup">
-              <li><a class="navigation" href="#nowhere">Виртуальная реальность</a></li>
-              <li><a class="navigation" href="#nowhere">Моноподы для селфи</a></li>
-              <li><a class="navigation" href="#nowhere">Экшн-камеры</a></li>
+        <ul class="site-navigation bullet-remove">
+          <li><a class="nav-elem site-nav" href="catalog.html">Каталог товаров</a>
+            <ul class="nav-popup bullet-remove">
+              <li><a class="nav-elem" href="#nowhere">Виртуальная реальность</a></li>
+              <li><a class="nav-elem" href="#nowhere">Моноподы для селфи</a></li>
+              <li><a class="nav-elem" href="#nowhere">Экшн-камеры</a></li>
             </ul>
-            <ul class="site-navigation nav-popup">
-              <li><a class="navigation" href="#nowhere">Фитнес-браслеты</a></li>
-              <li><a class="navigation" href="#nowhere">Умные часы</a></li>
+            <ul class="nav-popup bullet-remove">
+              <li><a class="nav-elem" href="#nowhere">Фитнес-браслеты</a></li>
+              <li><a class="nav-elem" href="#nowhere">Умные часы</a></li>
             </ul>
-            <ul class="site-navigation nav-popup">
-              <li><a class="navigation" href="#nowhere">Квадрокоптеры</a></li>
+            <ul class="nav-popup bullet-remove">
+              <li><a class="nav-elem" href="#nowhere">Квадрокоптеры</a></li>
             </ul>
           </li>
-          <li><a class="navigation site-nav" href="#nowhere">Доставка</a></li>
-          <li><a class="navigation site-nav" href="#nowhere">Гарантия</a></li>
-          <li><a class="navigation site-nav" href="#nowhere">Контакты</a></li>
+          <li><a class="nav-elem site-nav" href="#nowhere">Доставка</a></li>
+          <li><a class="nav-elem site-nav" href="#nowhere">Гарантия</a></li>
+          <li><a class="nav-elem site-nav" href="#nowhere">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -51,16 +51,16 @@
     <main>
       <h1 class="heading-text">Моноподы для селфи</h1>
 
-      <ul class="breadcrumbs">
+      <ul class="breadcrumbs bullet-remove">
         <li><a class="link-opacity" href="index.html">Главная</a></li>
         <li><a class="link-opacity" href="catalog.html">Каталог товаров</a></li>
         <li class="link-opacity">Моноподы для селфи</li>
       </ul>
 
-      <h2 class="bold-text">Фильтр:</h2>
+      <h2 class="filter-heading">Фильтр:</h2>
       <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="price-filter">
-          <legend class="bold-text">Стоимость</legend>
+          <legend class="text-font">Стоимость</legend>
           <!--Кастомный ползунок-->
           <label for="price-min">От</label>
           <input type="text" name="price-min" id="price-min" value="0">
@@ -68,8 +68,8 @@
           <input type="text" name="price-max" id="price-max" value="5000">
         </fieldset>
         <fieldset class="features-filter">
-          <legend class="bold-text">Цвет</legend>
-          <ul>
+          <legend class="text-font">Цвет</legend>
+          <ul class="bullet-remove">
             <li>
               <input class="switch" id="black" type="checkbox" name="color" value="black" checked>
               <label for="black">Черный</label>
@@ -93,8 +93,8 @@
           </ul>
         </fieldset>
         <fieldset class="features-filter">
-          <legend class="bold-text">Bluetooth</legend>
-          <ul>
+          <legend class="text-font">Bluetooth</legend>
+          <ul class=" bullet-remove">
             <li>
               <input class="switch" id="yes" type="radio" name="bluetooth" value="1" checked>
               <label for="yes">Есть</label>
@@ -108,8 +108,8 @@
         <button class="button" type="submit">Показать</button>
       </form>
       <form class="sort" action="https://echo.htmlacademy.ru" method="GET">
-        <h2 class="bold-text">Сортировка:</h2>
-        <ul>
+        <h2 class="sort-heading">Сортировка:</h2>
+        <ul class=" bullet-remove">
           <li><a class="sort-order button-opacity">По цене</a></li>
           <li><a class="sort-order button-opacity link-opacity" href="#nowhere">По типу</a></li>
           <li><a class="sort-order button-opacity link-opacity" href="#nowhere">По популярности</a></li>
@@ -118,9 +118,9 @@
         </ul>
       </form>
       <h2 class="visually-hidden">Список моноподов для селфи</h2>
-      <ul class="product-list">
+      <ul class="product-list bullet-remove">
         <li class="product">
-          <h3 class="bold-text">
+          <h3 class="text-font">
             <a href="#nowhere">
               <p>Любительская селфи-палка</p>
             </a>
@@ -135,7 +135,7 @@
           <a class="add-comparison" href="#nowhere">Добавить к сравнению</a>
         </li>
         <li class="product">
-          <h3 class="bold-text">
+          <h3 class="text-font">
             <a href="#nowhere">
               <p>Профессиональная селфи-палка</p>
             </a>
@@ -150,7 +150,7 @@
           <a class="add-comparison" href="#nowhere">Добавить к сравнению</a>
         </li>
         <li class="product">
-          <h3 class="bold-text">
+          <h3 class="text-font">
             <a href="#nowhere">
               <p>Непотопляемая селфи-палка</p>
             </a>
@@ -165,7 +165,7 @@
           <a class="add-comparison" href="#nowhere">Добавить к сравнению</a>
         </li>
         <li class="product">
-          <h3 class="bold-text">
+          <h3 class="text-font">
             <a href="#nowhere">
               <p>Селфи-палка «Следуй за мной»</p>
             </a>
@@ -181,21 +181,21 @@
         </li>
       </ul>
 
-      <ul class="pagination-list bold-text">
+      <ul class="pagination-list text-font bullet-remove">
         <li><a class="pagination-back" href="#nowhere">Назад</a></li>
-        <li><a class="pagination-page button-opacity">1</a></li>
-        <li><a class="pagination-page button-opacity link-opacity" href="#nowhere">2</a></li>
-        <li><a class="pagination-page button-opacity link-opacity" href="#nowhere">3</a></li>
+        <li><a class="page-number button-opacity">1</a></li>
+        <li><a class="page-number button-opacity link-opacity" href="#nowhere">2</a></li>
+        <li><a class="page-number button-opacity link-opacity" href="#nowhere">3</a></li>
         <li><a class="pagination-forward" href="#nowhere">Вперед</a></li>
       </ul>
     </main>
     <footer class="footer">
-      <a class="logo-device navigation" href="index.html">
+      <a class="logo-device nav-elem" href="index.html">
         <img src="img/logo-device.svg" alt="Логотип Девайс" width="163" height="35">
       </a>
 
-      <ul class="user-navigation">
-        <li><a class="footer-navigation" href="#nowhere">Валентин петухов</a></li>
+      <ul class="user-navigation bullet-remove">
+        <li><a class="footer-navigation" href="#nowhere">Валентин Петухов</a></li>
         <li><a class="link-opacity" href="#nowhere">Выйти</a></li>
         <li><a class="footer-navigation" href="#nowhere">Сравнить</a></li>
         <li><a class="footer-navigation" href="#nowhere">Корзина</a></li>
@@ -203,21 +203,21 @@
 
       <p class="addres">г. Москва, ул. Строителей, 15</p>
 
-      <ul class="site-navigation">
-        <li><a class="navigation site-nav" href="#nowhere">Доставка</a></li>
-        <li><a class="navigation site-nav" href="#nowhere">Гарантия</a></li>
-        <li><a class="navigation site-nav" href="#nowhere">Контакты</a></li>
+      <ul class="site-navigation bullet-remove">
+        <li><a class="nav-elem site-nav" href="#nowhere">Доставка</a></li>
+        <li><a class="nav-elem site-nav" href="#nowhere">Гарантия</a></li>
+        <li><a class="nav-elem site-nav" href="#nowhere">Контакты</a></li>
       </ul>
 
       <p><a class="tel" href="tel:+74954959595">Тел: +7(495)495-95-95</a></p>
 
-      <ul class="socials">
+      <ul class="socials bullet-remove">
         <li><a class="link-opacity" href="#nowhere"><span class="visually-hidden">Вконтакте</span></a></li>
         <li><a class="link-opacity" href="#nowhere"><span class="visually-hidden">Фейсбук</span></a></li>
         <li><a class="link-opacity" href="#nowhere"><span class="visually-hidden">Инстаграм</span></a></li>
       </ul>
 
-      <a class="logo-html navigation" href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="logo-html nav-elem" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo-html.svg" alt="Логотип htmlacademy"  width="27" height="35">
       </a>
     </footer>
