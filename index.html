@@ -9,42 +9,41 @@
   </head>
   <body>
     <header>
-      <nav class="main-navigation">
-        <a class="logo-device">
-          <img src="img/logo-device.svg" alt="Логотип Девайс" width="163" height="35">
-        </a>
-
-        <form class="search" action="https://echo.htmlacademy.ru" method="GET">
-          <input class="search-text nav-elem" type="search" name="search" placeholder="Поиск по сайту">
-          <button class="search-btn" type="submit">Найти</button>
-        </form>
-
-        <ul class="user-navigation bullet-remove">
-          <li><a class="nav-elem" href="#nowhere">Войти</a></li>
-          <li><a class="nav-elem" href="#nowhere">Сравнить</a></li>
-          <li><a class="nav-elem" href="#nowhere">Корзина</a></li>
-        </ul>
-
-        <ul class="site-navigation bullet-remove">
-          <li><a class="nav-elem site-nav" href="catalog.html">Каталог товаров</a>
-            <ul class="nav-popup bullet-remove">
-              <li><a class="nav-elem" href="#nowhere">Виртуальная реальность</a></li>
-              <li><a class="nav-elem" href="#nowhere">Моноподы для селфи</a></li>
-              <li><a class="nav-elem" href="#nowhere">Экшн-камеры</a></li>
+        <nav class="main-navigation">
+          <a class="logo-device">
+            <img src="img/logo-device.svg" alt="Логотип Девайс" width="163" height="35">
+          </a>
+          <div class="main-navigation-wrapper">
+            <form class="search" action="https://echo.htmlacademy.ru" method="GET">
+              <input class="search-text nav-elem" type="search" name="search" placeholder="Поиск по сайту">
+              <button class="search-button" type="submit">Найти</button>
+            </form>
+            <ul class="user-navigation bullet-remove">
+              <li><a class="nav-elem" href="#nowhere">Войти</a></li>
+              <li><a class="nav-elem" href="#nowhere">Сравнить</a></li>
+              <li><a class="nav-elem" href="#nowhere">Корзина</a></li>
             </ul>
-            <ul class="nav-popup bullet-remove">
-              <li><a class="nav-elem" href="#nowhere">Фитнес-браслеты</a></li>
-              <li><a class="nav-elem" href="#nowhere">Умные часы</a></li>
-            </ul>
-            <ul class="nav-popup bullet-remove">
-              <li><a class="nav-elem" href="#nowhere">Квадрокоптеры</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-elem site-nav" href="#nowhere">Доставка</a></li>
-          <li><a class="nav-elem site-nav" href="#nowhere">Гарантия</a></li>
-          <li><a class="nav-elem site-nav" href="#nowhere">Контакты</a></li>
-        </ul>
-      </nav>
+          </div>
+          <ul class="site-navigation bullet-remove">
+            <li><a class="nav-elem site-nav" href="catalog.html">Каталог товаров</a>
+              <ul class="nav-popup bullet-remove">
+                <li><a class="nav-elem" href="#nowhere">Виртуальная реальность</a></li>
+                <li><a class="nav-elem" href="#nowhere">Моноподы для селфи</a></li>
+                <li><a class="nav-elem" href="#nowhere">Экшн-камеры</a></li>
+              </ul>
+              <ul class="nav-popup bullet-remove">
+                <li><a class="nav-elem" href="#nowhere">Фитнес-браслеты</a></li>
+                <li><a class="nav-elem" href="#nowhere">Умные часы</a></li>
+              </ul>
+              <ul class="nav-popup bullet-remove">
+                <li><a class="nav-elem" href="#nowhere">Квадрокоптеры</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-elem site-nav" href="#nowhere">Доставка</a></li>
+            <li><a class="nav-elem site-nav" href="#nowhere">Гарантия</a></li>
+            <li><a class="nav-elem site-nav" href="#nowhere">Контакты</a></li>
+          </ul>
+        </nav>
     </header>
 
     <main>
@@ -187,49 +186,43 @@
           <li><a class="partner-4" href="#nowhere"><img src="img/partner-4.png" alt="Vive" width="260" height="100"></a></li>
         </ul>
       </section>
-      <div class="index-columns">
-        <section class="about-us">
+      <div class="index-columns container">
+        <section class="about-us-column">
           <h2 class="heading-text">О нас</h2>
-
           <p class="text">
-            Огромный выбор гаджетов не оставит равнодушым гика,
+            Огромный выбор гаджетов не оставит равнодушным гика,
             который есть в каждом из нас.
           </p>
-
           <p class="text">
             Мы можем доставить ваш товар в самые отдаленные точки
             России! DEVICE работает со многими транспортными компаниями:
           </p>
-
           <ul class="delivery-list text-font">
-            <li><p>Деловые линии</p></li>
+            <li><p>Деловые Линии</p></li>
             <li><p>Автотрейдинг</p></li>
             <li><p>ЖелДорЭкспедиция</p></li>
           </ul>
-
           <p><a class="button" href="#nowhere">Подробнее о нас</a></p>
         </section>
 
-        <section class="contacts">
+        <section class="contacts-column">
           <h2 class="heading-text">Контакты</h2>
-
           <p class="text">
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.
           </p>
-
           <p>
             <a href="#nowhere">
-              <img src="img/map.jpg" alt="Офис компании по адресу ул. Строителей, 15" width="560" height="222">
+              <img class="contacts-map" src="img/map.jpg" alt="Офис компании по адресу ул. Строителей, 15" width="560" height="222">
             </a>
           </p>
+          <p><a class="button" href="#nowhere">Напишите нам</a></p>
           <div class="map-popup">
             <p>
               <img src="img/map-big.jpg" alt="Офис компании по адресу ул. Строителей, 15" width="960" height="559">
             </p>
             <button class="close-button" type="button" name="close-map"><span class="visually-hidden">Закрыть</span></button>
           </div>
-          <p><a class="button" href="#nowhere">Напишите нам</a></p>
           <form class="write-us" action="https://echo.htmlacademy.ru" method="POST">
             <p>
               <label class="text-font" for="name">Ваше имя:</label>
@@ -250,35 +243,38 @@
       </div>
     </main>
     <footer class="footer">
-      <a class="logo-device">
-        <img src="img/logo-device.svg" alt="Логотип Девайс" width="163" height="35">
-      </a>
-
-      <ul class="user-navigation-footer bullet-remove">
-        <li><a class="footer-navigation" href="#nowhere">Войти</a></li>
-        <li><a class="footer-navigation" href="#nowhere">Сравнить</a></li>
-        <li><a class="footer-navigation" href="#nowhere">Корзина</a></li>
-      </ul>
-
-      <p class="addres">г. Москва, ул. Строителей, 15</p>
-
-      <ul class="site-navigation bullet-remove">
-        <li><a class="nav-elem site-nav" href="#nowhere">Доставка</a></li>
-        <li><a class="nav-elem site-nav" href="#nowhere">Гарантия</a></li>
-        <li><a class="nav-elem site-nav" href="#nowhere">Контакты</a></li>
-      </ul>
-
-      <p><a class="tel" href="tel:+74954959595">Тел: +7(495)495-95-95</a></p>
-
-      <ul class="socials bullet-remove">
-        <li><a class="link-opacity" href="#nowhere"><span class="visually-hidden">Вконтакте</span></a></li>
-        <li><a class="link-opacity" href="#nowhere"><span class="visually-hidden">Фейсбук</span></a></li>
-        <li><a class="link-opacity" href="#nowhere"><span class="visually-hidden">Инстаграм</span></a></li>
-      </ul>
-
-      <a class="logo-html nav-elem" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" alt="Логотип htmlacademy" width="27" height="35">
-      </a>
+      <div class="container">
+        <div class="footer-navigations-wrapper">
+          <a class="logo-device">
+            <img src="img/logo-device.svg" alt="Логотип Девайс" width="163" height="35">
+          </a>
+          <ul class="footer-user-navigation bullet-remove">
+            <li><a class="footer-navigation" href="#nowhere">Войти</a></li>
+            <li><a class="footer-navigation" href="#nowhere">Сравнить</a></li>
+            <li><a class="footer-navigation" href="#nowhere">Корзина</a></li>
+          </ul>
+        </div>
+        <div class="footer-navigations-wrapper">
+          <p class="addres">г. Москва, ул. Строителей, 15</p>
+          <ul class="site-navigation bullet-remove">
+            <li><a class="nav-elem site-nav" href="#nowhere">Доставка</a></li>
+            <li><a class="nav-elem site-nav" href="#nowhere">Гарантия</a></li>
+            <li><a class="nav-elem site-nav" href="#nowhere">Контакты</a></li>
+          </ul>
+          <p><a class="tel" href="tel:+74954959595">Тел: +7(495)495-95-95</a></p>
+        </div>
+        <div class="footer-navigations-wrapper">
+          <div class="yellow-line"></div>
+          <ul class="socials bullet-remove">
+            <li><a class="link-opacity" href="#nowhere"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a class="link-opacity" href="#nowhere"><span class="visually-hidden">Инстаграм</span></a></li>
+            <li><a class="link-opacity" href="#nowhere"><span class="visually-hidden">Твиттер</span></a></li>
+          </ul>
+          <a class="logo-html nav-elem" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-html.svg" alt="Логотип htmlacademy" width="27" height="35">
+          </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

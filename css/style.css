@@ -21,6 +21,7 @@
 }
 
 body {
+  padding-top: 40px;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -38,6 +39,11 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .button {
   font-weight: 800;
   font-size: 18px;
@@ -52,15 +58,82 @@ a {
   border: none;
 }
 
+.bullet-remove {
+  list-style: none;
+}
+
 .button:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
 .main-navigation {
+  width: 1040px;
+  margin: 0 auto;
   color: #000000;
   letter-spacing: 0.15px;
 
   background-color: rgba(240, 197, 46, 0.5);
+  padding: 53px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-text {
+  border: none;
+  border-bottom: solid 2px transparent;
+  font: inherit;
+
+  background: none;
+  opacity: 0.3;
+}
+
+.search-button {
+  margin: 0;
+  display: none;
+
+  font: inherit;
+
+  background: none;
+  border: solid 2px;
+}
+
+.search-text:focus {
+  border-color: inherit;
+  opacity: 1;
+}
+
+.search-button:hover,
+.search-button:focus {
+  color: #ffffff;
+
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #000000;
+}
+
+.user-navigation {
+  padding: 0;
+  margin: 0;
+}
+
+.site-navigation {
+  padding: 0;
+  margin: 0;
+}
+
+.site-navigation > li {
+  line-height: 0;
 }
 
 .site-nav {
@@ -90,42 +163,6 @@ a {
 
 .nav-elem:active {
   opacity: 0.3;
-}
-
-.search-text {
-  font: inherit;
-
-  background: none;
-  border: none;
-  opacity: 0.3;
-}
-
-.search-btn {
-  display: none;
-
-  font: inherit;
-
-  background: none;
-  border: solid 2px;
-}
-
-.search-text:focus {
-  border-bottom: solid 2px;
-  opacity: 1;
-}
-
-.search-btn:hover,
-.search-btn:focus {
-  color: #ffffff;
-
-  background-color: #000000;
-  border-color: #000000;
-}
-
-.search-btn:active {
-  color: rgba(255, 255, 255, 0.3);
-
-  background-color: #000000;
 }
 
 .text {
@@ -192,6 +229,9 @@ a {
 }
 
 .heading-text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
@@ -200,17 +240,65 @@ a {
   letter-spacing: 0.47px;
 }
 
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 82px;
+}
+
+.index-columns .text {
+  padding: 0;
+  margin: 0;
+  letter-spacing: normal;
+}
+
+.index-columns .heading-text {
+  margin-bottom: 44px;
+}
+
+.about-us-column {
+  width: 475px;
+}
+
+.about-us-column .text {
+  margin-bottom: 29px;
+}
+
+.delivery-list {
+  padding: 0;
+  margin: 0;
+  padding-left: 22px;
+  padding-top: 37px;
+  margin-bottom: 60px;
+}
+
 .delivery-list li {
   list-style: circle;
-  font-size: 16px;
+  font-size: 18px;
   vertical-align: middle;
   color: #e5e5e5;
 }
 
 .delivery-list p {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
   line-height: 40px;
   color: #000000;
   letter-spacing: normal;
+}
+
+.contacts-column {
+  width: 560px;
+}
+
+.contacts-column .text {
+  margin-bottom: 36.5px;
+}
+
+.contacts-map {
+  margin-bottom: 50px;
 }
 
 .close-button {
@@ -265,9 +353,49 @@ a {
 }
 
 .footer {
+  padding: 65px 0;
   color: #ffffff;
 
   background-color: #464646;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-navigations-wrapper {
+  display: flex;
+}
+
+.footer .logo-device {
+  margin-right: auto;
+}
+
+.footer-user-navigation {
+  padding: 0;
+  margin: 0;
+}
+
+.addres {
+  margin-right: 166px;
+}
+
+.footer .site-navigation {
+  margin-right: auto;
+}
+
+.yellow-line {
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
+  margin-right: 429px;
+}
+
+.socials {
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
 }
 
 .footer-navigation {
@@ -296,19 +424,27 @@ a {
   opacity: 0.1;
 }
 
+.catalog .container {
+  width: 1100px;
+  padding-left: 60px;
+}
+
+.catalog header {
+  margin-bottom: 44px;
+}
+
 .breadcrumbs {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 44px;
   font-size: 14px;
   line-height: 24px;
   color: #000000;
   letter-spacing: 0.14px;
 }
 
-.breadcrumbs + h2 {
-  background-color: #d9d9d9;
-}
-
 .breadcrumbs a[href]:hover,
-.breadcrumbs a[href]:focus {
+.breadcrumbs a:focus {
   opacity: 0.6;
 }
 
@@ -316,8 +452,37 @@ a {
   opacity: 0.1;
 }
 
-.filter {
+.catalog-columns {
+  display: flex;
+}
+
+.filter-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+  flex-shrink: 0;
   background-color: #ebebeb;
+}
+
+.filter {
+  padding-left: 60px;
+  width: 270px;
+  background-color: #ebebeb;
+}
+
+.filter-heading-wrapper {
+  text-align: right;
+  width: 100%;
+}
+
+.filter-heading {
+  padding: 0;
+  margin: 0;
+  padding-right: 180px;
+  background-color: #d9d9d9;
 }
 
 .features-filter label {
@@ -350,10 +515,6 @@ a {
   line-height: normal;
 }
 
-.bullet-remove {
-  list-style: none;
-}
-
 .switch:not([disabled]):hover,
 .switch:focus {
   opacity: 0.6;
@@ -374,14 +535,49 @@ a {
   letter-spacing: 3.2px;
 }
 
-.sort {
+.catalog-column {
+  margin-bottom: 77px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-column ul {
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-wrapper {
+  width: 760px;
+  padding-left: 70px;
+}
+
+.sort-wrapper {
+  margin-bottom: 69px;
   background-color: #ebebeb;
 }
 
-.sort a {
+.sort {
+  display: flex;
+  width: 760px;
+  padding-left: 70px;
+}
+
+.sort-heading {
+  padding: 0;
+  margin: 0;
+  margin-right: 55px;
+}
+
+.sort-list a {
   font-size: 14px;
   line-height: 18px;
   color: #000000;
+}
+
+.product:nth-child(2n-1) {
+  margin-right: 40px;
 }
 
 .product-price {
@@ -407,6 +603,11 @@ a {
 
 .add-comparison:active {
   opacity: 0.2;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product-img:hover,
@@ -440,12 +641,12 @@ a {
 }
 
 .sort-order-by[href]:hover,
-.sort-order-by[href]:focus {
+.sort-order-by {
   opacity: 0.4;
 }
 
 .button-opacity[href]:hover,
-.button-opacity[href]:focus {
+.button-opacity:focus {
   opacity: 0.6;
 }
 
