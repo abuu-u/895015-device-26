@@ -9,7 +9,7 @@
   </head>
   <body class="catalog">
     <header>
-      <nav class="main-navigation">
+      <nav class="main-navigation container">
         <a class="logo-device nav-elem" href="index.html">
           <img src="img/logo-device.svg" alt="Логотип Девайс" width="163" height="35">
         </a>
@@ -47,71 +47,64 @@
       </nav>
     </header>
 
-    <main>
-      <div class="container">
-        <h1 class="heading-text">Моноподы для селфи</h1>
-
-        <ul class="breadcrumbs bullet-remove">
-          <li><a class="link-opacity" href="index.html">Главная</a></li>
-          <li><a class="link-opacity" href="catalog.html">Каталог товаров</a></li>
-          <li class="link-opacity">Моноподы для селфи</li>
-        </ul>
-      </div>
+    <main class="container">
+      <h1 class="heading-text">Моноподы для селфи</h1>
+      <ul class="breadcrumbs bullet-remove">
+        <li><a class="link-opacity" href="index.html">Главная</a></li>
+        <li><a class="link-opacity" href="catalog.html">Каталог товаров</a></li>
+        <li class="link-opacity">Моноподы для селфи</li>
+      </ul>
       <div class="catalog-columns">
-        <div class="filter-wrapper">
-          <div class="filter-heading-wrapper">
-            <h2 class="filter-heading">Фильтр:</h2>
-          </div>
-          <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
-            <fieldset class="price-filter">
-              <legend class="text-font">Стоимость</legend>
-              <!--Кастомный ползунок-->
-              <label for="price-min">От</label>
-              <input type="text" name="price-min" id="price-min" value="0">
-              <label for="price-max">До</label>
-              <input type="text" name="price-max" id="price-max" value="5000">
-            </fieldset>
-            <fieldset class="features-filter">
-              <legend class="text-font">Цвет</legend>
-              <ul class="bullet-remove">
-                <li>
-                  <input class="switch" id="black" type="checkbox" name="color" value="black" checked>
-                  <label for="black">Черный</label>
-                </li>
-                <li>
-                  <input class="switch" id="white" type="checkbox" name="color" value="white">
-                  <label for="white">Белый</label>
-                </li>
-                <li>
-                  <input class="switch" id="blue" type="checkbox" name="color" value="blue" checked>
-                  <label for="blue"> Синий</label>
-                </li>
-                <li>
-                  <input class="switch" id="red" type="checkbox" name="color" value="red" checked>
-                  <label for="red">Красный</label>
-                </li>
-                <li>
-                  <input class="switch" id="pink" type="checkbox" name="color" value="pink">
-                  <label for="pink">Розовый</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="features-filter">
-              <legend class="text-font">Bluetooth</legend>
-              <ul class=" bullet-remove">
-                <li>
-                  <input class="switch" id="yes" type="radio" name="bluetooth" value="1" checked>
-                  <label for="yes">Есть</label>
-                </li>
-                <li>
-                  <input class="switch" id="no" type="radio" name="bluetooth" value="0">
-                  <label for="no">Нет</label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="button" type="submit">Показать</button>
-          </form>
-        </div>
+        <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
+          <h2 class="filter-heading">Фильтр:</h2>
+          <fieldset class="price-filter">
+            <legend class="text-font">Стоимость</legend>
+            <!--Кастомный ползунок-->
+            <label for="price-min">От</label>
+            <input type="text" name="price-min" id="price-min" value="0">
+            <label for="price-max">До</label>
+            <input type="text" name="price-max" id="price-max" value="5000">
+          </fieldset>
+          <fieldset class="features-filter">
+            <legend class="text-font">Цвет</legend>
+            <ul class="bullet-remove">
+              <li>
+                <input class="switch" id="black" type="checkbox" name="color" value="black" checked>
+                <label for="black">Черный</label>
+              </li>
+              <li>
+                <input class="switch" id="white" type="checkbox" name="color" value="white">
+                <label for="white">Белый</label>
+              </li>
+              <li>
+                <input class="switch" id="blue" type="checkbox" name="color" value="blue" checked>
+                <label for="blue"> Синий</label>
+              </li>
+              <li>
+                <input class="switch" id="red" type="checkbox" name="color" value="red" checked>
+                <label for="red">Красный</label>
+              </li>
+              <li>
+                <input class="switch" id="pink" type="checkbox" name="color" value="pink">
+                <label for="pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="features-filter">
+            <legend class="text-font">Bluetooth</legend>
+            <ul class=" bullet-remove">
+              <li>
+                <input class="switch" id="yes" type="radio" name="bluetooth" value="1" checked>
+                <label for="yes">Есть</label>
+              </li>
+              <li>
+                <input class="switch" id="no" type="radio" name="bluetooth" value="0">
+                <label for="no">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button" type="submit">Показать</button>
+        </form>
         <div class="catalog-column">
           <div class="sort-wrapper">
             <div class="sort">
@@ -204,7 +197,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-navigations-wrapper">
-          <a class="logo-device nav-elem" href="index.html">
+          <a class="footer-logo-device nav-elem" href="index.html">
             <img src="img/logo-device.svg" alt="Логотип Девайс" width="163" height="35">
           </a>
           <ul class="footer-user-navigation bullet-remove">
