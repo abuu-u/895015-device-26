@@ -191,7 +191,9 @@ a {
 }/***/
 
 .slide-img {
-  margin: 0 auto;
+  width: 600px;
+  margin: 0;
+  text-align: center;
 }
 
 .slide-wrapper {
@@ -257,8 +259,15 @@ a {
 }
 
 .service-slides {
-  margin: 0;
+  margin: 0 122px 0 0;
   padding: 0;
+  width: 278px;
+}
+
+.service-slides li {
+  margin-bottom: 24px;
+  height: 40px;
+  width: 160px;
 }
 
 .service-slides .button:active {
