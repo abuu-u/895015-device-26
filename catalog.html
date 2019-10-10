@@ -73,7 +73,13 @@
           <h2 class="filter-heading">Фильтр:</h2>
           <fieldset class="price-filter">
             <legend class="text-font">Стоимость</legend>
-            <!--Кастомный ползунок-->
+            <div class="custom-range">
+              <div class="price-scale">
+                <div class="price-bar"></div>
+              </div>
+              <div class="price-button price-min-button"></div>
+              <div class="price-button price-max-button"></div>
+            </div>
             <label for="price-min">от</label>
             <input class="filter-custom-range-text" type="text" name="price-min" id="price-min" value="0">
             <label for="price-max">до</label>
@@ -84,23 +90,23 @@
             <ul class="filter-list bullet-remove">
               <li>
                 <input class="switch" id="black" type="checkbox" name="color" value="black" checked>
-                <label for="black">Черный</label>
+                <label class="custom-switch checkbox" for="black">Черный</label>
               </li>
               <li>
                 <input class="switch" id="white" type="checkbox" name="color" value="white">
-                <label for="white">Белый</label>
+                <label class="custom-switch checkbox" for="white">Белый</label>
               </li>
               <li>
                 <input class="switch" id="blue" type="checkbox" name="color" value="blue" checked>
-                <label for="blue"> Синий</label>
+                <label class="custom-switch checkbox" for="blue"> Синий</label>
               </li>
               <li>
                 <input class="switch" id="red" type="checkbox" name="color" value="red" checked>
-                <label for="red">Красный</label>
+                <label class="custom-switch checkbox" for="red">Красный</label>
               </li>
               <li>
                 <input class="switch" id="pink" type="checkbox" name="color" value="pink">
-                <label for="pink">Розовый</label>
+                <label class="custom-switch checkbox" for="pink">Розовый</label>
               </li>
             </ul>
           </fieldset>
@@ -109,11 +115,11 @@
             <ul class="filter-list bullet-remove">
               <li>
                 <input class="switch" id="yes" type="radio" name="bluetooth" value="1" checked>
-                <label for="yes">Есть</label>
+                <label class="custom-switch radio radio-on" for="yes">Есть</label>
               </li>
               <li>
                 <input class="switch" id="no" type="radio" name="bluetooth" value="0">
-                <label for="no">Нет</label>
+                <label class="custom-switch radio radio-off" for="no">Нет</label>
               </li>
             </ul>
           </fieldset>
@@ -147,9 +153,7 @@
             <ul class="product-list bullet-remove">
               <li class="product">
                 <h3 class="text-font">
-                  <a href="#nowhere">
-                    <p>Любительская селфи-палка</p>
-                  </a>
+                  <a href="#nowhere">Любительская селфи-палка</a>
                 </h3>
                 <div class="product-img-wrapper">
                   <img class="product-img" src="img/item-1.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
@@ -164,9 +168,7 @@
               </li>
               <li class="product">
                 <h3 class="text-font">
-                  <a href="#nowhere">
-                    <p>Профессиональная селфи-палка</p>
-                  </a>
+                  <a href="#nowhere">Профессиональная <span class="nowrap">селфи-палка</span></a>
                 </h3>
                 <div class="product-img-wrapper">
                   <img class="product-img" src="img/item-2.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
@@ -181,9 +183,7 @@
               </li>
               <li class="product">
                 <h3 class="text-font">
-                  <a href="#nowhere">
-                    <p>Непотопляемая селфи-палка</p>
-                  </a>
+                  <a href="#nowhere">Непотопляемая селфи-палка</a>
                 </h3>
                 <div class="product-img-wrapper">
                   <img class="product-img" src="img/item-3.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
@@ -198,9 +198,7 @@
               </li>
               <li class="product new">
                 <h3 class="text-font">
-                  <a href="#nowhere">
-                    <p>Селфи-палка «Следуй за мной»</p>
-                  </a>
+                  <a href="#nowhere">Селфи-палка «Следуй за мной»</a>
                 </h3>
                 <div class="product-img-wrapper">
                   <img class="product-img" src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">

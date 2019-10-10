@@ -61,17 +61,25 @@
     <main>
       <h1 class="visually-hidden">Магазин Девайс</h1>
 
-      <section class="container">
+      <section class="slides-wrapper container">
         <h2 class="visually-hidden">Промо-предложения</h2>
+        <input class="visually-hidden slide-1-toggle" id="slide-1" type="radio" name="slides-toggle" checked>
+        <input class="visually-hidden slide-2-toggle" id="slide-2" type="radio" name="slides-toggle">
+        <input class="visually-hidden slide-3-toggle" id="slide-3" type="radio" name="slides-toggle">
+        <div class="slider-controls">
+          <label class="slider-control slider-control-1" for="slide-1">Первый</label>
+          <label class="slider-control slider-control-2" for="slide-2">Второй</label>
+          <label class="slider-control slider-control-3" for="slide-3">Третий</label>
+        </div>
         <ul class="slides bullet-remove">
-          <li>
+          <li class="slide slide-1">
             <h3 class="visually-hidden">Самая длинная палка</h3>
             <p class="slide-img">
               <a href="#nowhere">
                 <img src="img/suggestion-1.png" alt="Предложение 1" width="384" height="486">
               </a>
             </p>
-            <div class="slide-wrapper">
+            <div class="slide-info slide-1-info">
               <b class="heading-text">
                 Делай селфи,<br>
                 как Бен Стиллер!
@@ -83,26 +91,32 @@
               <a class="button" href="#nowhere">Подробнее</a>
               <h4 class="visually-hidden">Список характеристик:</h4>
               <dl class="product-features">
-                <dt>Длина палки</dt>
-                <dd>8,5 м</dd>
+                <div class="product-feature">
+                  <dt>8,5 м</dt>
+                  <dd>Длина палки</dd>
+                </div>
 
-                <dt>Вес палки</dt>
-                <dd>5 кг</dd>
+                <div class="product-feature">
+                  <dt>5 кг</dt>
+                  <dd>Вес палки</dd>
+                </div>
 
-                <dt>Материал</dt>
-                <dd>Карбон</dd>
+                <div class="product-feature">
+                  <dt>Карбон</dt>
+                  <dd>Материал</dd>
+                </div>
               </dl>
             </div>
           </li>
 
-          <li>
+          <li class="slide slide-2">
             <h3 class="visually-hidden">Мотивирующие фитнес-браслеты</h3>
             <p class="slide-img">
               <a href="#nowhere">
                 <img src="img/suggestion-2.png" alt="Предложение 2" width="345" height="485">
               </a>
             </p>
-            <div class="slide-wrapper">
+            <div class="slide-info slide-2-info">
               <b class="heading-text">
                 Худеем<br>
                 правильно!
@@ -114,20 +128,22 @@
               <a class="button" href="#nowhere">Подробнее</a>
               <h4 class="visually-hidden">Список характеристик:</h4>
               <dl class="product-features">
-                <dt>Без подзарядки</dt>
-                <dd>48 часов</dd>
+                <div class="product-feature">
+                  <dt>48 часов</dt>
+                  <dd>Без подзарядки</dd>
+                </div>
               </dl>
             </div>
           </li>
 
-          <li>
+          <li class="slide slide-3">
             <h3 class="visually-hidden">Мощный квадрокоптер</h3>
             <p class="slide-img">
               <a href="#nowhere">
                 <img src="img/suggestion-3.png" alt="Предложение 3" width="526" height="334">
               </a>
             </p>
-            <div class="slide-wrapper">
+            <div class="slide-info slide-3-info">
               <b class="heading-text">
                 Порхает как бабочка, жалит как пчела!
               </b>
@@ -139,10 +155,14 @@
               <a class="button" href="#nowhere">Подробнее</a>
               <h4 class="visually-hidden">Список характеристик:</h4>
               <dl class="product-features">
-                <dt>Дальность полета</dt>
-                <dd>800 м</dd>
-                <dt>Радиус поражения</dt>
-                <dd>50 м</dd>
+                <div class="product-feature">
+                  <dt>800 м</dt>
+                  <dd>Дальность полета</dd>
+                </div>
+                <div class="product-feature">
+                  <dt>50 м</dt>
+                  <dd>Радиус поражения</dd>
+                </div>
               </dl>
             </div>
           </li>
@@ -154,8 +174,8 @@
         <ul class="section-list text-font bullet-remove">
           <li class="section-item item-1"><a href="#nowhere">Виртуальная реальность</a></li>
           <li class="section-item item-2"><a href="#nowhere">Моноподы для селфи</a></li>
-          <li class="section-item item-3"><a href="#nowhere">Экшн-камеры</a></li>
-          <li class="section-item item-4"><a href="#nowhere">Фитнес-браслеты</a></li>
+          <li class="section-item item-3"><a href="#nowhere"><span class="nowrap">Экшн-камеры</span></a></li>
+          <li class="section-item item-4"><a href="#nowhere"><span class="nowrap">Фитнес-браслеты</span></a></li>
           <li class="section-item item-5"><a href="#nowhere">Умные часы</a></li>
           <li class="section-item item-6"><a href="#nowhere">Квадрокоптеры</a></li>
         </ul>
@@ -164,13 +184,16 @@
       <section class="services">
         <h2 class="visually-hidden">Список сервисов</h2>
         <div class="services-wrapper container">
-          <ul class="service-slides bullet-remove">
-            <li><a class="button" href="#nowhere">Доставка</a></li>
-            <li><a class="button" href="#nowhere">Гарантия</a></li>
-            <li><a class="button" href="#nowhere">Кредит</a></li>
-          </ul>
+          <input class="visually-hidden service-slide-1-toggle" id="service-1" type="radio" name="service-slides-toggle" checked>
+          <input class="visually-hidden service-slide-2-toggle" id="service-2" type="radio" name="service-slides-toggle">
+          <input class="visually-hidden service-slide-3-toggle" id="service-3" type="radio" name="service-slides-toggle">
+          <div class="service-slider-controls">
+            <label class="service-slider-control service-slider-control-1 button" for="service-1">Доставка</label>
+            <label class="service-slider-control service-slider-control-2 button" for="service-2">Гарантия</label>
+            <label class="service-slider-control service-slider-control-3 button" for="service-3">Кредит</label>
+          </div>
           <ul class="service-list bullet-remove">
-            <li>
+            <li class="service-slide-1">
               <h3 class="heading-text">Доставка</h3>
               <p class="text">
                 Мы с удовольствием доставим ваш товар прямо к вашему
@@ -178,7 +201,7 @@
                 заработаем, поднимая его на ваш этаж.
               </p>
             </li>
-            <li>
+            <li class="service-slide-2">
               <h3 class="heading-text">Гарантия</h3>
               <p class="text">
                 Если из-за возгорания купленного у нас товара у вас сгорит
@@ -186,7 +209,7 @@
                 Товар, не дом, конечно же.
               </p>
             </li>
-            <li>
+            <li class="service-slide-3">
               <h3 class="heading-text">Кредит</h3>
               <p class="text">
                 Залезть в долговую яму стало проще! Кредитные
