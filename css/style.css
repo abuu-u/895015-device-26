@@ -1529,6 +1529,7 @@ a {
 }
 
 .sort-order-by {
+  display: block;
   position: relative;
 }
 
