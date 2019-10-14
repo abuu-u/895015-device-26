@@ -11,7 +11,7 @@
     <header>
       <nav class="main-navigation container">
         <a class="logo-device nav-elem" href="index.html">
-          <img src="img/logo-device.svg" alt="Логотип Девайс" width="163" height="35">
+          <img class="pointer-events-none" src="img/logo-device.svg" alt="Логотип Девайс" width="163" height="35">
         </a>
         <div class="main-navigation-wrapper">
           <form class="search" action="https://echo.htmlacademy.ru" method="GET">
@@ -77,8 +77,8 @@
               <div class="price-scale">
                 <div class="price-bar"></div>
               </div>
-              <div class="price-button price-min-button"></div>
-              <div class="price-button price-max-button"></div>
+              <button class="price-button price-min-button" type="button"></button>
+              <button class="price-button price-max-button" type="button"></button>
             </div>
             <label for="price-min">от</label>
             <input class="filter-custom-range-text" type="text" name="price-min" id="price-min" value="0">
@@ -89,23 +89,23 @@
             <legend class="text-font">Цвет</legend>
             <ul class="filter-list bullet-remove">
               <li>
-                <input class="switch" id="black" type="checkbox" name="color" value="black" checked>
+                <input class="switch visually-hidden" id="black" type="checkbox" name="color" value="black" checked>
                 <label class="custom-switch checkbox" for="black">Черный</label>
               </li>
               <li>
-                <input class="switch" id="white" type="checkbox" name="color" value="white">
+                <input class="switch visually-hidden" id="white" type="checkbox" name="color" value="white">
                 <label class="custom-switch checkbox" for="white">Белый</label>
               </li>
               <li>
-                <input class="switch" id="blue" type="checkbox" name="color" value="blue" checked>
+                <input class="switch visually-hidden" id="blue" type="checkbox" name="color" value="blue" checked>
                 <label class="custom-switch checkbox" for="blue"> Синий</label>
               </li>
               <li>
-                <input class="switch" id="red" type="checkbox" name="color" value="red" checked>
+                <input class="switch visually-hidden" id="red" type="checkbox" name="color" value="red" checked>
                 <label class="custom-switch checkbox" for="red">Красный</label>
               </li>
               <li>
-                <input class="switch" id="pink" type="checkbox" name="color" value="pink">
+                <input class="switch visually-hidden" id="pink" type="checkbox" name="color" value="pink">
                 <label class="custom-switch checkbox" for="pink">Розовый</label>
               </li>
             </ul>
@@ -114,11 +114,11 @@
             <legend class="text-font">Bluetooth</legend>
             <ul class="filter-list bullet-remove">
               <li>
-                <input class="switch" id="yes" type="radio" name="bluetooth" value="1" checked>
+                <input class="switch visually-hidden" id="yes" type="radio" name="bluetooth" value="1" checked>
                 <label class="custom-switch radio radio-on" for="yes">Есть</label>
               </li>
               <li>
-                <input class="switch" id="no" type="radio" name="bluetooth" value="0">
+                <input class="switch visually-hidden" id="no" type="radio" name="bluetooth" value="0">
                 <label class="custom-switch radio radio-off" for="no">Нет</label>
               </li>
             </ul>
@@ -166,9 +166,9 @@
                   500 руб.
                 </p>
               </li>
-              <li class="product">
+              <li class="product product-2">
                 <h3 class="text-font">
-                  <a href="#nowhere">Профессиональная <span class="nowrap">селфи-палка</span></a>
+                  <a href="#nowhere">Профессиональная селфи-палка</a>
                 </h3>
                 <div class="product-img-wrapper">
                   <img class="product-img" src="img/item-2.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
@@ -228,15 +228,15 @@
       <div class="container">
         <div class="footer-navigations-wrapper user-navigation-row">
           <a class="footer-logo-device nav-elem" href="index.html">
-            <img src="img/logo-device-yellow.svg" alt="Логотип Девайс" width="163" height="35">
+            <img class="pointer-events-none" src="img/logo-device-yellow.svg" alt="Логотип Девайс" width="163" height="35">
           </a>
           <ul class="footer-user-navigation bullet-remove">
             <li>
               <a class="footer-user-navigation-link footer-user-link" href="#nowhere">
-                <svg class="footer-nav-elem" xmlns="http://www.w3.org/2000/svg" width="13" height="12" fill="#272525">
+                <svg class="footer-nav-elem pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="13" height="12" fill="#272525">
                   <path d="M.03 12h12.94A6.22 6.22 0 0 0 8.3 6.46a3.47 3.47 0 0 0 1.68-2.98 3.48 3.48 0 0 0-6.97 0c0 1.27.68 2.37 1.7 2.98C2.1 7.16.18 9.36.02 12z"/>
                 </svg>
-                <span class="footer-navigation">Валентин Петухов</span>
+                <span class="footer-navigation pointer-events-none">Валентин Петухов</span>
               </a>
             </li>
             <li>
@@ -244,14 +244,14 @@
             </li>
             <li>
               <a class="footer-user-navigation-link footer-compare-link" href="#nowhere">
-                <svg class="footer-nav-elem" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewbox="0 0 10 10" fill=""><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>
-                <span class="footer-navigation">Сравнить</span>
+                <svg class="footer-nav-elem pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewbox="0 0 10 10" fill=""><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>
+                <span class="footer-navigation pointer-events-none">Сравнить</span>
               </a>
             </li>
             <li>
               <a class="footer-user-navigation-link footer-cart-link" href="#nowhere">
-                <svg class="footer-nav-elem" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill=""><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>
-                <span class="footer-navigation">Корзина</span>
+                <svg class="footer-nav-elem pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill=""><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>
+                <span class="footer-navigation pointer-events-none">Корзина</span>
               </a>
             </li>
           </ul>
@@ -272,7 +272,7 @@
             <li><a class="link-opacity social social-tw" href="#nowhere"><span class="visually-hidden">Твиттер</span></a></li>
           </ul>
           <a class="logo-html nav-elem" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-html.svg" alt="Логотип htmlacademy" width="27" height="35">
+            <img class="pointer-events-none" src="img/logo-html.svg" alt="Логотип htmlacademy" width="27" height="35">
           </a>
         </div>
       </div>
