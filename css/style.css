@@ -1005,7 +1005,6 @@ a {
 }
 
 .map-popup {
-  display: block;
   width: 960px;
 
   animation: bounce 0.6s;
