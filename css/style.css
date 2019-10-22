@@ -1005,8 +1005,10 @@ a {
 }
 
 .map-popup {
-  display: none;
+  display: block;
   width: 960px;
+
+  animation: bounce 0.6s;
 }
 
 .map-popup img {
@@ -1023,14 +1025,8 @@ a {
   border: none;
 }
 
-.map-popup-show {
-  display: block;
-
-  animation: bounce 0.6s;
-}
-
 .write-us {
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   box-sizing: border-box;
@@ -1038,10 +1034,6 @@ a {
   padding: 92px 100px 78px;
 
   background: #ffffff;
-}
-
-.write-us-show {
-  display: flex;
 
   animation: bounce 0.6s;
 }
@@ -1740,9 +1732,7 @@ a {
   transition: opacity 0.2s;
 }
 
-.product-img-wrapper:hover .product-buttons-wrapper,
-.product-img-wrapper:focus .product-buttons-wrapper,
-.product-buttons-wrapper-show {
+.product-img-wrapper:hover .product-buttons-wrapper {
   opacity: 1;
 }
 
@@ -1815,4 +1805,8 @@ a {
 .button-opacity[href]:active,
 .sort-order-by[href]:active {
   opacity: 1;
+}
+
+.hidden {
+  display: none;
 }

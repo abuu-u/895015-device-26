@@ -11,6 +11,11 @@ var isStorageSupport = true;
 var nameStorage = "";
 var emailStorage = "";
 
+var mapLink = document.querySelector(".contacts-map")
+var mapPopup = document.querySelector(".map-popup");
+
+var mapClose = mapPopup.querySelector(".close-button");
+
 try {
   nameStorage = localStorage.getItem("writeUsName");
   emailStorage = localStorage.getItem("email");
@@ -20,7 +25,7 @@ try {
 
 writeUsLink.addEventListener("click", function (evt) {
   evt.preventDefault();
-  writeUsPopup.classList.add("write-us-show");
+  writeUsPopup.classList.remove("hidden");
 
   if (nameStorage && !emailStorage) {
     writeUsName.value = nameStorage;
@@ -43,7 +48,7 @@ writeUsLink.addEventListener("click", function (evt) {
 
 writeUsClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  writeUsPopup.classList.remove("write-us-show");
+  writeUsPopup.classList.add("hidden");
   writeUsPopup.classList.remove("modal-error");
 });
 
@@ -61,12 +66,21 @@ writeUsPopup.addEventListener("submit", function (evt) {
   }
 });
 
+mapLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.remove("hidden");
+});
+
+mapClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.add("hidden");
+});
+
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (writeUsPopup.classList.contains("write-us-show")) {
-      writeUsPopup.classList.remove("write-us-show");
-      writeUsPopup.classList.remove("modal-error");
-    }
+    mapPopup.classList.add("hidden");
+    writeUsPopup.classList.remove("write-us-show");
+    writeUsPopup.classList.add("hidden");
   }
 });
