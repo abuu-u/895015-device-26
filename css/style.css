@@ -584,12 +584,12 @@ a {
 }
 
 .sections {
-  margin-bottom: 181px;
+  margin-bottom: 141px;
 }
 
 .section-list {
+  flex-wrap: wrap;
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -597,6 +597,10 @@ a {
 .section-item {
   box-sizing: border-box;
   width: 160px;
+}
+
+.section-item:not(:nth-child(6n)) {
+  margin: 0 40px 40px 0;
 }
 
 .section-item-2 {
@@ -1075,6 +1079,7 @@ a {
 }
 
 .write-us .text {
+  outline: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -1385,6 +1390,7 @@ a {
 }
 
 .price-button {
+  overflow: hidden;
   position: absolute;
   top: -10px;
 
@@ -1736,6 +1742,7 @@ a {
 }
 
 .pagination-list {
+  align-items: center;
   display: flex;
   margin: 0;
   padding: 0;
@@ -1763,7 +1770,7 @@ a {
 }
 
 .page-number {
-  margin: auto 14px;
+  margin: 0 14px;
 }
 
 .pagination-forward {
